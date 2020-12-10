@@ -1,0 +1,12 @@
+.Display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 3rem;
+  background: #111111;
+  border-radius: 0.5rem;
+  border: 2px solid #000000;
+  color: #e940ff;
+  font-size: 1.125rem;
+}

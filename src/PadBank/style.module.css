@@ -1,0 +1,18 @@
+.PadBank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  width: 100%;
+  height: calc(95vw - 1rem);
+  padding: 0 1rem 2rem;
+}
+
+@media (min-width: 577px) {
+  .PadBank {
+    grid-gap: 0.5rem;
+    width: 55%;
+    height: calc(684px * 0.55 - 2rem);
+    padding: 0 2rem 2rem;
+  }
+}

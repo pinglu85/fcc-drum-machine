@@ -1,0 +1,20 @@
+.App {
+  width: 700px;
+  max-width: 95vw;
+  background: #353233;
+  border-top: 0.5rem solid #595657;
+  border-left: 0.5rem solid #494748;
+  border-right: 0.5rem solid #424040;
+  border-bottom: 0.5rem solid #3a3838;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 24px rgba(37, 37, 39, 0.5);
+}
+
+.AppHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3rem;
+  padding: 0 0.875rem;
+  color: #b1b2b3;
+}

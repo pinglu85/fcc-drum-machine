@@ -1,0 +1,34 @@
+.DrumPad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  font-size: 1.125rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  box-shadow: 1px 5px 0 rgba(37, 37, 39, 0.7);
+  background: rgb(240, 240, 240);
+  background: radial-gradient(
+    circle,
+    rgb(240, 240, 240) 0%,
+    rgb(219, 219, 219) 50%,
+    rgb(192, 192, 192) 100%
+  );
+}
+
+.isActive {
+  box-shadow: 1px 1px 0 rgba(37, 37, 39, 0.7);
+  transform: translateY(3px);
+}
+
+.isPowerOn {
+  background: rgb(78, 224, 237);
+  background: radial-gradient(
+    circle,
+    rgba(78, 224, 237, 1) 0%,
+    rgba(55, 207, 241, 1) 50%,
+    rgba(0, 163, 233, 1) 100%
+  );
+}

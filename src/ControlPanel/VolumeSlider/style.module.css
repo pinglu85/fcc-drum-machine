@@ -1,0 +1,32 @@
+.VolumeSlider {
+  position: relative;
+  width: 240px;
+  height: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slider {
+  position: absolute;
+  top: 13px;
+  width: 100%;
+  height: 2px;
+  background: #585456;
+  border-radius: 1px;
+}
+
+.currentVolume {
+  background: #9730ec;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.handler {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ebebeb;
+  box-shadow: 4px 1px 4px rgba(37, 37, 39, 0.719);
+  z-index: 21;
+}

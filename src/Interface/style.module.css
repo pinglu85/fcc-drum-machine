@@ -1,0 +1,10 @@
+.DrumMachineInterface {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 577px) {
+  .DrumMachineInterface {
+    flex-direction: row;
+  }
+}

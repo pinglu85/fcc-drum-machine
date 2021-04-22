@@ -3,7 +3,6 @@ import styles from './style.module.css';
 const VolumeSlider = ({ isPowerOn, volume, setVolume, setDisplayContent }) => {
   const handleChange = (evt) => {
     const newVolume = evt.target.value;
-
     setVolume(newVolume);
     setDisplayContent(`Volume: ${newVolume}`);
   };

@@ -1,32 +1,66 @@
 .VolumeSlider {
-  position: relative;
   width: 240px;
   height: 28px;
-  cursor: pointer;
-  user-select: none;
 }
 
 .slider {
-  position: absolute;
+  appearance: none;
+  outline: none;
   top: 13px;
   width: 100%;
   height: 2px;
-  background: #585456;
   border-radius: 1px;
+  cursor: pointer;
 }
 
-.currentVolume {
-  background: #9730ec;
-  z-index: 20;
-  pointer-events: none;
-}
+/* Chrome */
 
-.handler {
-  position: absolute;
+.slider::-webkit-slider-thumb {
+  appearance: none;
   width: 28px;
   height: 28px;
-  border-radius: 50%;
+  margin-top: -12px;
   background: #ebebeb;
-  box-shadow: 4px 1px 4px rgba(37, 37, 39, 0.719);
-  z-index: 21;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 1px 2px rgba(37, 37, 39, 0.719);
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 100%;
+  border: none;
+}
+
+/* Moz */
+
+.slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: #ebebeb;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 2px 1px 2px rgba(37, 37, 39, 0.719);
+}
+.slider::-moz-range-progress {
+  background: #9730ec;
+  height: 100%;
+  border: none;
+}
+.slider::-moz-range-track {
+  background: rgb(177, 177, 177);
+  height: 100%;
+  border: none;
+}
+
+/* IE*/
+
+.slider::-ms-fill-lower {
+  background-color: #9730ec;
+  height: 100%;
+  border: none;
+}
+.slider::-ms-fill-upper {
+  background-color: rgb(177, 177, 177);
+  height: 100%;
+  border: none;
 }
